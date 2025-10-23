@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flex</title>
+  </head>
+  <body class="p-20">
+    <nav class="font-bold text-4xl mb-6">Flex</nav>
+    <h2 class="font-bold">1.</h2>
+    <!-- https://tailwindcss.com/docs/flex -->
+     <div class="container bg-stone-900 p-6 w-[600px] mb-10">
+      <div class="flex gap-4">
+      <div class="rounded-md px-4 py-2 bg-pink-800 w-14 flex-none">01</div>
+      <div class="rounded-md px-4 py-2 bg-pink-800 w-64 flex-1">02</div>
+      <div class="rounded-md px-4 py-2 bg-pink-800 w-32 flex-1">03</div>
+</div>
+     </div>
+     <h2 class="font-bold">2.</h2>
+    <!-- https://tailwindcss.com/docs/flex-direction#column -->
+     <div class="container bg-stone-900 p-6 w-[600px] mb-10">
+      <div class="flex flex-col gap-4">
+      <div class="rounded-md px-4 py-2 bg-pink-800 " >01</div>
+      <div class="rounded-md px-4 py-2 bg-pink-800 " >02</div>
+      <div class="rounded-md px-4 py-2 bg-pink-800 " >03</div>
+</div>
+     </div>
+     <h2 class="font-bold">3.</h2>
+    <!-- https://tailwindcss.com/docs/justify-items -->
+     <div class="container bg-stone-900 p-6 w-[600px] mb-10">
+      <div class="grid justify-items-start gap-4">
+      <div class="rounded-md px-4 py-2 bg-pink-800 ">01</div>
+      <div class="rounded-md px-4 py-2 bg-pink-800 ">02</div>
+      <div class="rounded-md px-4 py-2 bg-pink-800 ">03</div>
+      <div class="rounded-md px-4 py-2 bg-pink-800 ">04</div>
+      <div class="rounded-md px-4 py-2 bg-pink-800 ">05</div>
+      <div class="rounded-md px-4 py-2 bg-pink-800 ">06</div>
+</div>
+     </div>
+     <h2 class="font-bold">4.</h2>
+    <!-- https://tailwindcss.com/docs/order -->
+     <div class="container bg-stone-900 p-6 w-[600px] mb-10">
+      <div class="flex justify-between">
+      <div class="rounded-md px-4 py-2 bg-sky-600 order-3">01</div>
+      <div class="rounded-md px-4 py-2 bg-sky-600 order-1">02</div>
+      <div class="rounded-md px-4 py-2 bg-sky-600 order-2">03</div>
+</div>
+     </div>
+
+    <h2 class="font-bold">5.Grow and shrink</h2>
+    <!-- https://tailwindcss.com/docs/flex-shrink -->
+     <div class="container bg-stone-900 p-6 w-[600px] mb-10">
+      <div class="flex gap-4">
+      <div class="rounded-md px-4 py-2 bg-sky-600 h-14 w-14 flex-none">01</div>
+      <div class="rounded-md px-4 py-2 bg-sky-600 h-14 w-64 shrink">02</div>
+      <div class="rounded-md px-4 py-2 bg-sky-600 h-14 w-14 flex-none">03</div>
+</div>
+     </div>
+  </body>
+</html>

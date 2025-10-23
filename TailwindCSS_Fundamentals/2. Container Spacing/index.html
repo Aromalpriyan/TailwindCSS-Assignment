@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Container & Spacing</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="font-bold text-4xl mb-6">
+      Container & Spacing
+    </nav>
+    <h2 class="font-bold">1.Margin</h2>
+    <!-- https://tailwindcss.com/docs/margin -->
+    <div class="container bg-stone-900 p-6 w-[100px] mb-10" >
+      <button class="bg-sky-600 px-2 py-2 rounded-md">m-8</button>
+    </div>
+    
+    <h2 class="font-bold">2.Arbitrary Spacing</h2>
+     <!-- https://tailwindcss.com/docs/border-spacing#arbitrary-values -->
+
+     <div class="container bg-stone-900 p-7 w-[300px] mb-10 text-white flex justify-center items-center">
+      <table class="border-separate border-spacing-2 border border-gray-400 dark:border-gray-500">
+  <thead>
+    <tr>
+      <th class="border border-gray-300 dark:border-gray-600">State</th>
+      <th class="border border-gray-300 dark:border-gray-600">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-300 dark:border-gray-700">Indiana</td>
+      <td class="border border-gray-300 dark:border-gray-700">Indianapolis</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 dark:border-gray-700">Ohio</td>
+      <td class="border border-gray-300 dark:border-gray-700">Columbus</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 dark:border-gray-700">Michigan</td>
+      <td class="border border-gray-300 dark:border-gray-700">Detroit</td>
+    </tr>
+  </tbody>
+</table>
+     </div>
+
+    <h2 class="font-bold">3.Padding</h2>
+    <!-- https://tailwindcss.com/docs/padding -->
+     <div class="container bg-stone-900 p-7 w-[700px] mb-10 text-white flex justify-between items-center">
+      
+      <button class="pt-6 ... bg-purple-800 rounded-md">pt-6</button>
+      <button class="pr-4 ... bg-purple-800 rounded-md">pr-4</button>
+      <button class="pb-8 ... bg-purple-800 rounded-md">pb-8</button>
+      <button class="pl-4 ... bg-purple-800 rounded-md">pl-4</button>
+
+     </div>
+
+    <!-- https://tailwindcss.com/docs/space -->
+    <h3 class="font-bold">1.Space Between X</h3>
+     <div class="container bg-stone-900 p-7 w-[700px] mb-10 text-white flex justify-start items-center space-x-4 ...">
+     
+      <button class="bg-sky-700 text-white rounded-md px-4 py-4">01</button>
+      <button class="bg-sky-700 text-white rounded-md px-4 py-4">02</button>
+      <button class="bg-sky-700 text-white rounded-md px-4 py-4">03</button>
+
+
+</div>
+
+  <h3 class="font-bold">2.Space Between Y</h3>
+    <div class="container bg-stone-900 p-7 w-[700px] mb-10 text-white flex gap-4 justify-start items-center flex-row-reverse space-Y-reverse ...">
+
+      <button class="bg-sky-700 text-white rounded-md px-4 py-4">01</button>
+      <button class="bg-sky-700 text-white rounded-md px-4 py-4">02</button>
+      <button class="bg-sky-700 text-white rounded-md px-4 py-4">03</button>
+</div>
+    
+  </body>
+</html>

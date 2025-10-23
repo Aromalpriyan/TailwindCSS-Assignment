@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Transform & Transition</title>
+  </head>
+  <body class="p-10">
+    <nav class="font-bold text-4xl mb-6">
+      Transform & Transition
+    </nav>
+    <!-- No Transition -->
+    <h2 class="font-bold">1.Transition</h2>
+    <!-- 1. https://tailwindcss.com/docs/transition-property -->
+     <div class="container bg-stone-800 w-[400px] p-6 mb-10 flex justify-center">
+      <button class="text-white rounded-md px-4 py-2 bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ...">Save Changes</button>
+     </div>
+     <h2 class="font-bold">2.</h2>
+    <!-- 2. https://tailwindcss.com/docs/transition-duration -->
+     <div class="container bg-stone-800 w-[500px] p-6 mb-10 flex justify-between items-center">
+     <button class="text-white rounded-md px-4 py-2 bg-purple-900 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 ">Button A</button>
+     <button class="text-white rounded-md px-4 py-2 bg-purple-900 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  ">Button B</button>
+     <button class="text-white rounded-md px-4 py-2 bg-purple-900 transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-110  ">Button C</button>
+     </div>
+     <h2 class="font-bold">3.</h2>
+    <!-- 3. https://tailwindcss.com/docs/transition-timing-function -->
+     <div class="container bg-stone-800 w-[500px] p-6 mb-10 flex justify-between items-center">
+      <button class="text-white rounded-md px-4 py-2 bg-sky-800 duration-300 ease-in hover:-translate-y-1 hover:scale-110">Button A</button>
+      <button class="text-white rounded-md px-4 py-2 bg-sky-800 duration-300 ease-out hover:-translate-y-1 hover:scale-110">Button B</button>
+      <button class="text-white rounded-md px-4 py-2 bg-sky-800 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Button C</button>
+     </div>
+     <h2 class="font-bold">4.</h2>
+    <!-- 4. https://tailwindcss.com/docs/transition-delay -->
+     <div class="container bg-stone-800 w-[500px] p-6 mb-10 flex justify-between items-center">
+      <button class="text-white rounded-md px-4 py-2 bg-sky-600 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">Button A</button>
+      <button class="text-white rounded-md px-4 py-2 bg-sky-600 transition delay-300 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">Button B</button>
+      <button class="text-white rounded-md px-4 py-2 bg-sky-600 transition delay-700 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">Button C</button>
+     </div>
+     <h2 class="font-bold">5.</h2>
+    <!-- 5. https://tailwindcss.com/docs/animation -->
+     <div class="container bg-stone-800 w-[400px] p-6 mb-10 flex justify-center">
+    <div class="mx-auto w-full max-w-sm rounded-md border border-blue-500 p-4">
+  <div class="flex animate-pulse space-x-4">
+    <div class="size-10 rounded-full bg-gray-200"></div>
+    <div class="flex-1 space-y-6 py-1">
+      <div class="h-2 rounded bg-gray-200"></div>
+      <div class="space-y-3">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-2 h-2 rounded bg-gray-200"></div>
+          <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+        </div>
+        <div class="h-2 rounded bg-gray-200"></div>
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+
+    <!-- Transition & Transform -->
+
+    <!-- Animation -->
+  </body>
+</html>
